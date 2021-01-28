@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "build"
+            ],
+            "group":  {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal":"always"
+            },
+            "problemMatcher": "$gcc"
+        },
+        {
+            "label": "test",
+            "type": "shell",
+            "command": "make",
+            "args": [
+                "run-test"
+            ],
+            "group":  {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal":"always"
+            }
+        }
+    ]
+}
